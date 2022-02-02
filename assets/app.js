@@ -10,3 +10,7 @@ import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
+
+$('.burger').click(function(){
+    $(this).toggleClass('open');
+  });
