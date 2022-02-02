@@ -2,5 +2,61 @@
 body {
     margin:0;
     padding:0;
-    background-color: rgb(9, 9, 65);
+    background-color: rgb(77, 77, 99);
+}
+
+// .desktop-menu {
+//     display: flex;
+//     justify-content: flex-end;
+
+//     ul{
+//         display: flex;
+//         padding:0;
+//         justify-content: flex-end;
+//         width: fit-content;
+
+//         .nav-link  {
+//             list-style: none;
+//             display: none;
+//             a {
+//                 color:white;
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+// }
+
+// profil
+
+.profil {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.card-profil {
+    display: flex;
+}
+
+.picture-profil {
+    width: 50%;
+    background-color: red;
+}
+
+.skill-profil {
+    width: 50%;
+    background-color: royalblue;
+    
+    h1 {
+        background-color: saddlebrown;
+        text-align: center;
+    }
+}
+
+.about {
+    background-color: seagreen;
+
+    h1 {
+        background-color: saddlebrown;
+        text-align: center;
+    }
 }
