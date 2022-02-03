@@ -2,13 +2,13 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Project;
+use App\Entity\Skill;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
-class ProjectFixtures extends Fixture 
+class SkillFixtures extends Fixture 
 {
-    const PROJECTS = [
+    const SkillS = [
         [
             'startDate'=> '06/32/4321',
             'endDate'=> '98/54/4567',
