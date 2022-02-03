@@ -8,28 +8,26 @@ use Doctrine\Persistence\ObjectManager;
 
 class SkillFixtures extends Fixture 
 {
-    const SkillS = [
+    const SKILLS = [
         [
-            'startDate'=> '06/32/4321',
-            'endDate'=> '98/54/4567',
-            'picture'=> 'jkdsjkd',
-            'description'=>'dsd',
-            'link'=> 'htppls',
+            'name'=> 'PHP',
+            'icon'=> 'url',
+        ],
+        [
+            'name'=> 'Symfony',
+            'icon'=> 'url',
         ],
     ];
 
 
     public function load(ObjectManager $manager): void
     {
-        foreach (self::PROJECTS as $key => $projectData) {  
-            $project = new Project();  
-            $project->setStartDate($projectData['startDate']);
-            $project->setEndDate($projectData['endDate']);  
-            $project->setPicture($projectData['picture']);  
-            $project->setDescription($projectData['description']);  
-            $project->setLink($projectData['link']);  
+        foreach (self::SKILLS as $key => $skillData) {  
+            $skill = new Skill();  
+            $skill->setName($skillData['name']);
+            $skill->setIcon($skillData['icon']);  
 
-            $manager->persist($project);
+            $manager->persist($skill);
         
         }  
         $manager->flush();
