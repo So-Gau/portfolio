@@ -12,25 +12,26 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
 {
     public const PROJECTS = [
         [
-            'startDate'=> '01-01-2022',
-            'endDate'=> '02-01-2022',
+            'startDate'=> '27-09-2021',
+            'endDate'=> '08-10-2021',
             'picture'=> 'url',
-            'description'=>'dsd',
-            'link'=> 'https',
+            'description'=>'Réalisation d un projet "programme de la saison" regroupant tous les projets, les hackathon, et l event de la formation.',
+            'link'=> 'https://n26n26n26.github.io/project1_season_program/',
         ],
         [
-            'startDate'=> '01-01-2022',
-            'endDate'=> '02-01-2022',
+            'startDate'=> '21-10-2021',
+            'endDate'=> '19-11-2021',
             'picture'=> 'url',
-            'description'=>'dsd',
-            'link'=> 'https',
+            'description'=>'Réalisation de projet sur le thème de Sherlock « la petite évasion », site dynamique et responsive avec l’utilisation des bases de données (méthode Merise).',
+            'link'=> 'https://evasion.marvincrepin.com/',
         ],
         [
-            'startDate'=> '01-01-2022',
-            'endDate'=> '02-01-2022',
+            'startDate'=> '07-12-2021',
+            'endDate'=> '28-01-2022',
             'picture'=> 'url',
-            'description'=>'dsd',
-            'link'=> 'https',
+            'description'=>'MotorBox une application facilitant le suivi d usure 
+            et d entretien des pièces de votre moto à l aide d un boîtier relié en Bluetooth',
+            'link'=> 'https://github.com/WildCodeSchool/reims-202109-php-project3-motorbox',
         ],
     ];
 
