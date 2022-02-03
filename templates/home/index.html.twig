@@ -11,23 +11,35 @@
     <section class="profil">
         <div class ="card-profil">
             <div class="picture-profil">
-                <img src= "">
-                eeeeee
+                <img src="{{ asset('build/images/profil.jpeg') }}">
             </div>
             <div class="skill-profil">
                 <h1>Compétence</h1>
                 {% for skill in skills %}
-                    <p>{{skill.icon}}</p>
+                    <p>{{skill.name}}</p>
                 {% endfor %}
             </div>
         </div> 
         <div class="about">
-            <h1>à propos<h1>
+            <h1>à propos</h1>
             <p> blbablabkabablala test</p>
         </div>
     </section>
 
 {# projet #}
     <section class="my-project">
+        <div class="slider">
+            {% for skill in skills %}
+                 <div>{{skill.name}}</div>
+            {% endfor %}
+        </div>
     </section>
+
+{#login admin#}
+
+<div class="admin">
+    {% if app.user %}
+        <li><a href="/logout">Déconnexion</a></li>
+    {% endif %}
+</div>
 {% endblock %}

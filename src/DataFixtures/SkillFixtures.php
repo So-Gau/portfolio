@@ -11,11 +11,15 @@ class SkillFixtures extends Fixture
     public const SKILLS = [
         [
             'name'=> 'PHP',
-            'icon'=> 'url',
+            'icon'=> 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png',
         ],
         [
             'name'=> 'Symfony',
-            'icon'=> 'url',
+            'icon'=> 'https://symfony.com/logos/symfony_black_03.png',
+        ],
+        [
+            'name'=> 'MySql',
+            'icon'=> 'https://symfony.com/logos/symfony_black_03.png',
         ],
     ];
 

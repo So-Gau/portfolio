@@ -2,13 +2,17 @@
 body {
     margin:0;
     padding:0;
-    background-color: rgb(77, 77, 99);
+    background-image: url("https://cdn.pixabay.com/photo/2018/06/09/17/25/trees-3464777_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 // NAVBAR
-
+p {
+    color: red;
+}
 .menu-container {
-    background-color:rgba(0, 0, 0, 0.452);
+    background-color:rgba(0, 0, 0, 0.770);
         h1 {
             margin-left: 1rem;
             color:white;
@@ -44,7 +48,9 @@ body {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.770);
+    border-color: #543b34;
+    border-style: groove;
 
         p {
             color: white;
@@ -55,21 +61,24 @@ body {
 }
 
 .picture-profil {
-    width: 50%;
+    width: 40%;
+        img {
+            width: 14rem;
+        }
 }
 
 .skill-profil {
-    width: 50%;
+    width: 60%;
 
     h1 {
         text-align: center;
-        background-color: chocolate;
+        background-color: #a2902a;
     }
 }
 
 .about {
     h1 {
-        background-color: saddlebrown;
+        background-color:chocolate;
         text-align: center;
     }
 }

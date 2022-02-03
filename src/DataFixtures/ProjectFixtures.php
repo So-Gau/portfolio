@@ -18,6 +18,20 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'description'=>'dsd',
             'link'=> 'https',
         ],
+        [
+            'startDate'=> '01-01-2022',
+            'endDate'=> '02-01-2022',
+            'picture'=> 'url',
+            'description'=>'dsd',
+            'link'=> 'https',
+        ],
+        [
+            'startDate'=> '01-01-2022',
+            'endDate'=> '02-01-2022',
+            'picture'=> 'url',
+            'description'=>'dsd',
+            'link'=> 'https',
+        ],
     ];
 
 
@@ -36,6 +50,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             $project->setLink($projectData['link']); 
             
             $project->addSkill($this->getReference('Skill_' . 'PHP'));
+            $project->addCustomer($this->getReference('customer_' . 'Motorbox'));
             
 
             $manager->persist($project);
@@ -47,6 +62,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
     {
         return [
           SkillFixtures::class,
+          CustomerFixtures::class,
         ];
     }
 }

@@ -27,7 +27,7 @@ class CustomerFixtures extends Fixture
             $customer->setLogo($customerData['logo']);  
 
             $manager->persist($customer);
-            $this->addReference('customer_' . $key, $customer);
+            $this->addReference('customer_' . $customerData['name'], $customer);
         
         }  
         $manager->flush();
