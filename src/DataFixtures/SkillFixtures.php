@@ -19,7 +19,6 @@ class SkillFixtures extends Fixture
         ],
     ];
 
-
     public function load(ObjectManager $manager): void
     {
         foreach (self::SKILLS as $key => $skillData) {  
