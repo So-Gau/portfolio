@@ -4,15 +4,14 @@ body {
     padding:0;
     background-image: url("https://cdn.pixabay.com/photo/2018/06/09/17/25/trees-3464777_960_720.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 100vh;
 }
-
 // NAVBAR
-p {
-    color: red;
-}
 .menu-container {
-    background-color:rgba(0, 0, 0, 0.770);
+    background-color:rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
         h1 {
             margin-left: 1rem;
             color:white;
@@ -78,7 +77,8 @@ p {
 
 .about {
     h1 {
-        background-color:chocolate;
+        background-color: #a2902a;
+        ;
         text-align: center;
     }
 }
