@@ -16,16 +16,18 @@
             </div>
             <div class="skill-profil">
                 <h1>Compétence</h1>
-                <p>pppppppppppppppppppppppppppp
-                BASE DE DONNÉppppppppppppppppp
-                ppppppppppppppppppppppppppppppppp
-                ppppppppppppppppppppppppppppppppp
-                </p>
+                {% for skill in skills %}
+                    <p>{{skill.icon}}</p>
+                {% endfor %}
             </div>
         </div> 
         <div class="about">
             <h1>à propos<h1>
             <h1>
         </div>
+    </section>
+
+{# projet #}
+    <section class="my-project">
     </section>
 {% endblock %}
