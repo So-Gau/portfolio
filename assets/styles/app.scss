@@ -5,33 +5,36 @@ body {
     background-color: rgb(77, 77, 99);
 }
 
-// .desktop-menu {
-//     display: flex;
-//     justify-content: flex-end;
+.desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+        ul{
+        display: flex;
+        padding:0;
+        justify-content: flex-end;
+        width: fit-content;
 
-//     ul{
-//         display: flex;
-//         padding:0;
-//         justify-content: flex-end;
-//         width: fit-content;
+        .nav-link  {
+            list-style: none;
+             a {
+                 color:white;
+                 text-decoration: none;
+            }
+        }
+    }
+}
 
-//         .nav-link  {
-//             list-style: none;
-//             display: none;
-//             a {
-//                 color:white;
-//                 text-decoration: none;
-//             }
-//         }
-//     }
-// }
-
-// profil
+// PROFIL
 
 .profil {
     margin: 1rem;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.452);
+
+        p {
+            color: white;
+        }
 }
 .card-profil {
     display: flex;
@@ -39,24 +42,21 @@ body {
 
 .picture-profil {
     width: 50%;
-    background-color: red;
 }
 
 .skill-profil {
     width: 50%;
-    background-color: royalblue;
-    
+
     h1 {
-        background-color: saddlebrown;
         text-align: center;
+        background-color: chocolate;
     }
 }
 
 .about {
-    background-color: seagreen;
-
     h1 {
         background-color: saddlebrown;
         text-align: center;
     }
 }
+// END PROFIL
