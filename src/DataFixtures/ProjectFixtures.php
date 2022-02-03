@@ -4,12 +4,13 @@ namespace App\DataFixtures;
 
 use App\Entity\Project;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use DateTime;
 
-class ProjectFixtures extends Fixture 
+class ProjectFixtures extends Fixture implements DependentFixtureInterface
 {
-    const PROJECTS = [
+    public const PROJECTS = [
         [
             'startDate'=> '01-01-2022',
             'endDate'=> '02-01-2022',
@@ -32,11 +33,20 @@ class ProjectFixtures extends Fixture
             );
             $project->setPicture($projectData['picture']);  
             $project->setDescription($projectData['description']);  
-            $project->setLink($projectData['link']);  
+            $project->setLink($projectData['link']); 
+            
+            $project->addSkill($this->getReference('Skill_' . 'PHP'));
+            
 
             $manager->persist($project);
-        
         }  
         $manager->flush();
+    }
+
+    public function getDependencies()
+    {
+        return [
+          SkillFixtures::class,
+        ];
     }
 }

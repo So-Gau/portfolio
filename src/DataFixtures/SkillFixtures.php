@@ -6,9 +6,9 @@ use App\Entity\Skill;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
-class SkillFixtures extends Fixture 
+class SkillFixtures extends Fixture
 {
-    const SKILLS = [
+    public const SKILLS = [
         [
             'name'=> 'PHP',
             'icon'=> 'url',
@@ -17,6 +17,19 @@ class SkillFixtures extends Fixture
             'name'=> 'Symfony',
             'icon'=> 'url',
         ],
+        [
+            'name'=> 'Symfony',
+            'icon'=> 'url',
+        ],
+        [
+            'name'=> 'Symfony',
+            'icon'=> 'url',
+        ],
+        [
+            'name'=> 'Symfony',
+            'icon'=> 'url',
+        ],
+
     ];
 
     public function load(ObjectManager $manager): void
@@ -25,10 +38,11 @@ class SkillFixtures extends Fixture
             $skill = new Skill();  
             $skill->setName($skillData['name']);
             $skill->setIcon($skillData['icon']);  
+                $this->addReference('Skill_' . $skillData['name'], $skill);
 
             $manager->persist($skill);
-        
         }  
+
         $manager->flush();
     }
 }
