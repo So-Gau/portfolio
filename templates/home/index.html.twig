@@ -20,7 +20,7 @@
                 {% endfor %}
             </div>
         </div> 
-        <div class="about">
+        <div class="about" id="about-section">
             <h1>à propos</h1>
             <p> blbablabkabablala test</p>
         </div>
@@ -29,8 +29,14 @@
 {# projet #}
     <section class="my-project">
         <div class="slider">
-            {% for skill in skills %}
-                 <div>{{skill.name}}</div>
+            {% for project in projects %}
+                <div>
+                    <div>{{project.startDate|date("m/d/Y")}}</div>
+                    <div>{{project.endDate|date("m/d/Y")}}</div>
+                    <div>{{project.picture}}</div>
+                    <div>{{project.description}}</div>
+                    <a href="{{project.link}}">voir le projet</a>
+                </div>
             {% endfor %}
         </div>
     </section>

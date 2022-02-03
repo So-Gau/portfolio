@@ -13,7 +13,7 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="homepage")
      */
-   public function index(SkillRepository $skillRepository, ProjectRespository $projectRespository): Response
+   public function index(SkillRepository $skillRepository, ProjectRepository $projectRepository): Response
    {
        return $this->render('home/index.html.twig', [
             'skills' => $skillRepository->findAll(),
