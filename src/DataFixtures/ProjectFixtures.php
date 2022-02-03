@@ -13,9 +13,9 @@ class ProjectFixtures extends Fixture
         [
             'startDate'=> '01-01-2022',
             'endDate'=> '02-01-2022',
-            'picture'=> 'jkdsjkd',
+            'picture'=> 'url',
             'description'=>'dsd',
-            'link'=> 'htppls',
+            'link'=> 'https',
         ],
     ];
 
