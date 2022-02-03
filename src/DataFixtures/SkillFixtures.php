@@ -17,19 +17,6 @@ class SkillFixtures extends Fixture
             'name'=> 'Symfony',
             'icon'=> 'url',
         ],
-        [
-            'name'=> 'Symfony',
-            'icon'=> 'url',
-        ],
-        [
-            'name'=> 'Symfony',
-            'icon'=> 'url',
-        ],
-        [
-            'name'=> 'Symfony',
-            'icon'=> 'url',
-        ],
-
     ];
 
     public function load(ObjectManager $manager): void
