@@ -1,10 +1,15 @@
+html {
+    overflow: scroll;
+  background-image: url("https://cdn.pixabay.com/photo/2018/06/09/17/25/trees-3464777_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 body {
     margin:0;
     padding:0;
-    background-image: url("https://cdn.pixabay.com/photo/2018/06/09/17/25/trees-3464777_960_720.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  
     height: 100vh;
 }
 // NAVBAR
@@ -34,6 +39,9 @@ body {
              a {
                  color:white;
                  text-decoration: none;
+                &:hover {
+                    color:#a2902a;
+                }
             }
         }
     }
@@ -83,3 +91,27 @@ body {
     }
 }
 // END PROFIL
+
+// PROJECT
+
+.bx-wrapper {
+    border-color: #543b34;
+    border-style: groove;
+    background:rgba(0, 0, 0, 0.770);
+    color:white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 5px #a2902a;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: 39px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+  }
+// END PROJECT

@@ -8,7 +8,7 @@
  {% include "_navbar.html.twig" %}
 
 {# a propos #}
-    <section class="profil">
+    <section class="profil" id="about-section">
         <div class ="card-profil">
             <div class="picture-profil">
                 <img src="{{ asset('build/images/profil.jpeg') }}">
@@ -16,11 +16,11 @@
             <div class="skill-profil">
                 <h1>Compétence</h1>
                 {% for skill in skills %}
-                    <p>{{skill.name}}</p>
+                    <p>{{ skill.name }}</p>
                 {% endfor %}
             </div>
         </div> 
-        <div class="about" id="about-section">
+        <div class="about">
             <h1>à propos</h1>
             <p> blbablabkabablala test</p>
         </div>
@@ -31,11 +31,10 @@
         <div class="slider">
             {% for project in projects %}
                 <div>
-                    <div>{{project.startDate|date("m/d/Y")}}</div>
-                    <div>{{project.endDate|date("m/d/Y")}}</div>
-                    <div>{{project.picture}}</div>
-                    <div>{{project.description}}</div>
-                    <a href="{{project.link}}">voir le projet</a>
+                    <div>{{ project.startDate|date("d/m/Y") }} - {{ project.endDate|date("d/m/Y") }}</div>
+                    <div>{{ project.picture }}</div>
+                    <div>{{ project.description }}</div>
+                    <a href="{{ project.link }}">voir le projet</a>
                 </div>
             {% endfor %}
         </div>
@@ -48,4 +47,5 @@
         <li><a href="/logout">Déconnexion</a></li>
     {% endif %}
 </div>
+
 {% endblock %}
