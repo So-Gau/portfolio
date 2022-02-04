@@ -32,7 +32,7 @@
             {% for project in projects %}
                 <div>
                     <div>{{ project.startDate|date("d/m/Y") }} - {{ project.endDate|date("d/m/Y") }}</div>
-                    <div>{{ project.picture }}</div>
+                    <img src="{{ project.picture }}" width=" 150px">
                     <div>{{ project.description }}</div>
                     <a href="{{ project.link }}">voir le projet</a>
                 </div>
@@ -42,10 +42,10 @@
 
 {#login admin#}
 
-<div class="admin">
+<ul class="admin">
     {% if app.user %}
         <li><a href="/logout">Déconnexion</a></li>
     {% endif %}
-</div>
+</ul>
 
 {% endblock %}

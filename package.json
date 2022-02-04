@@ -17,6 +17,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "bxslider": "^4.2.14",
         "sass": "^1.49.7",
         "sass-loader": "^12.4.0"
     }

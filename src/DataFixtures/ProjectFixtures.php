@@ -14,7 +14,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         [
             'startDate'=> '27-09-2021',
             'endDate'=> '08-10-2021',
-            'picture'=> 'url',
+            'picture'=> '/build/images/trees.jpg',
             'description'=>'Réalisation d un projet "programme de la saison" regroupant tous les projets, les hackathon, et l event de la formation.',
             'link'=> 'https://n26n26n26.github.io/project1_season_program/',
         ],
